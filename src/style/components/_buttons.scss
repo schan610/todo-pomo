@@ -1,0 +1,20 @@
+@use "../abstracts/index.scss" as *;
+
+.btn {
+  display: inline-block;
+  font-family: $font-family--headings;
+  padding: 0.6rem 4rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: $primary-color;
+  color: #fff;
+}
+.btn--secondary {
+  background-color: $accent-color;
+  color: $text-color--dark;
+}

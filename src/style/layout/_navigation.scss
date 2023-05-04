@@ -1,0 +1,55 @@
+@use "../abstracts/index.scss" as *;
+.nav {
+  padding: 2.4rem 0;
+  &__logo {
+    color: $logo-color;
+    font-family: $font-family--headings;
+    font-weight: bold;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $base-color;
+  }
+
+  &__list {
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__user {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+
+    &__item {
+      font-size: 1.8rem;
+      font-family: $font-family--headings;
+
+      a {
+        color: $text-color;
+        font-weight: 500;
+      }
+
+      &--active {
+        font-size: 1.8rem;
+        font-family: $font-family--headings;
+        border-bottom: 1px solid $text-color--dark;
+        a {
+          color: $text-color--dark;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &__account {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,134 @@
+@use "../abstracts/index.scss" as *;
+
+.todo {
+  background-color: $primary-color;
+  height: 100vh;
+  &__container {
+    padding-top: 4rem;
+  }
+
+  &__heading {
+    color: #fff;
+    margin-bottom: 2.4rem;
+  }
+
+  &__content {
+    background-color: #fff;
+    display: flex;
+    min-height: 60rem;
+    box-shadow: 4px 4px 4px 2px #00000020;
+  }
+
+  &__menu {
+    flex: 0 0 40rem;
+    font-family: $font-family--headings;
+    padding: 2rem;
+    background-color: $accent-color;
+
+    &__add {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 4rem;
+      padding: 8px 1rem;
+
+      width: 100%;
+      background-color: #fff;
+      border: 1px solid $text-color;
+      input {
+        border: none;
+        width: 100%;
+        &::placeholder {
+          color: #ced4da;
+          font-size: 1.2rem;
+          font-family: $font-family--headings;
+        }
+      }
+
+      input:focus {
+        outline: none;
+      }
+    }
+    span {
+      display: inline-block;
+      width: 100%;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 2rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 1px solid $primary-color;
+    }
+
+    ul li {
+      padding: 0.4rem 0.4rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    ul li:hover {
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+}
+
+.tasks {
+  flex: 0 1 100%;
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: repeat(3, minmax(min-content, auto));
+
+  &__list {
+    max-height: 20rem;
+    overflow-y: auto;
+  }
+  &__item {
+    font-family: $font-family--headings;
+    padding: 1.2rem 0;
+    display: flex;
+    align-items: center;
+
+    &__info {
+      margin-left: 1.2rem;
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        display: inline-block;
+        font-size: 1.6rem;
+        // color when marked completed
+        color: #868e96;
+        color: $text-color;
+      }
+    }
+
+    // Strike through when task is marked completed
+    // &__info::after {
+    //   position: absolute;
+    //   left: 0;
+    //   top: 50%;
+    //   height: 1px;
+    //   background: #868e96;
+    //   content: "";
+    //   width: 100%;
+    //   display: block;
+    // }
+  }
+}
+
+.datepickers {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  // left: 100%;
+  // top: 100%;
+
+  // transform: translate(-100%, -100%);
+}

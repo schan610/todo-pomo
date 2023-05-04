@@ -1,0 +1,35 @@
+@use "../abstracts/index.scss" as *;
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  &__input {
+    appearance: none;
+    /* creating a custom design */
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 0.15em;
+    // margin-right: 0.5em;
+    border: 1px solid $primary-color;
+    outline: none;
+
+    &:checked {
+      background-color: $primary-color;
+      position: relative;
+      color: #fff;
+    }
+  }
+
+  &__mark {
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    left: 0;
+    color: #fff;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

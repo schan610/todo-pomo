@@ -1,0 +1,27 @@
+@use "../abstracts/index.scss" as *;
+.hero {
+  color: #fff;
+  background-color: $base-color--dark;
+  height: 90vh;
+  &__container {
+    height: 100%;
+  }
+  &__textbox {
+    padding-top: 19rem;
+    width: 50%;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    font-family: $font-family--headings;
+    font-weight: 500;
+    line-height: 2;
+    margin-top: 2rem;
+  }
+
+  &__action {
+    margin-top: 1.6rem;
+    display: flex;
+    gap: 2rem;
+  }
+}

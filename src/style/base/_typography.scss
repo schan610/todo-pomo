@@ -1,0 +1,30 @@
+@use "../abstracts/index.scss" as *;
+
+.logo {
+  font-family: $font-family--headings;
+  font-size: 2rem;
+  font-weight: bold;
+  color: $logo-color;
+}
+
+.numbers {
+  font-family: $font-family--numbers;
+}
+
+// HEADINGS
+.heading--primary {
+  font-family: $font-family--headings;
+  font-size: 4.8rem;
+}
+
+.heading--secondary {
+  font-family: $font-family--headings;
+  font-size: 3.2rem;
+}
+
+.heading--tertiary {
+  font-family: $font-family--headings;
+  font-size: 2rem;
+}
+
+// TEXT
