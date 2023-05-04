@@ -1,6 +1,5 @@
 import TodoMenu from "./TodoMenu";
 import TodoItem from "./TodoItem";
-import DateChooser from "../UI/DateChooser";
 const Todo = () => {
   return (
     <section className="todo">
@@ -21,6 +20,9 @@ const Todo = () => {
             <div className="tasks__tomorrow">
               <h3 className="heading--tertiary">Tomorrow</h3>
               <ul className="tasks__list">
+                <TodoItem />
+                <TodoItem />
+                <TodoItem />
                 <TodoItem />
                 <TodoItem />
                 <TodoItem />

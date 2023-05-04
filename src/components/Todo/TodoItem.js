@@ -15,7 +15,7 @@ const TodoItem = () => {
         <BsCheckLg className="checkbox__mark" />
       </label>
       <div className="tasks__item__info">
-        <span className="tasks__item__name">Do dishes</span>
+        <span className="tasks__item__name">Lorem ipsum dolor sit amet.</span>
         <span className="tasks__item__date">04/29/23</span>
       </div>
     </li>
