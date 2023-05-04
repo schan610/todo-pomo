@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  background-color: #fff;
   &__input {
     appearance: none;
     /* creating a custom design */
@@ -16,8 +17,8 @@
 
     &:checked {
       background-color: $primary-color;
+      // background-image: url()
       position: relative;
-      color: #fff;
     }
   }
 
